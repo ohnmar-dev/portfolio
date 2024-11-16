@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     
     # Customized App
-    'base'
+    'base',
+    'django_quill',
 ]
 
 MIDDLEWARE = [
