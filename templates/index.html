@@ -1,88 +1,75 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Lerana Rose - Portfolio</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Free HTML Templates" name="keywords" />
+    <meta content="Free HTML Templates" name="description" />
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img/favicon.ico" rel="icon" />
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
 
     <!-- Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
 
     <!-- Libraries Stylesheet -->
-    <link href="{% static 'assets/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet">
-    <link href="{% static 'assets/lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/lib/owlcarousel/assets/owl.carousel.min.css' %}" rel="stylesheet" />
+    <link href="{% static 'assets/lib/lightbox/css/lightbox.min.css' %}" rel="stylesheet" />
 
     <!-- Customized Bootstrap Stylesheet -->
-    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
-</head>
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
+  </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
-    
-    <!-- Navbar Start-->
-    {% include "partials/navbar.html" %}
+  <body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    {% include 'partials/navbar.html' %}
     <!-- Navbar End -->
 
-
     <!-- Video Modal Start -->
-    {% include "partials/video-model.html" %}
+    {% include 'partials/video-model.html' %}
     <!-- Video Modal End -->
 
-
     <!-- Header Start -->
-    {% include "partials/header.html" %}
+    {% include 'partials/header.html' %}
     <!-- Header End -->
 
-
     <!-- About Start -->
-    {% include "partials/about.html" %}
+    {% include 'partials/about.html' %}
     <!-- About End -->
 
-
     <!-- Qualification Start -->
-    {% comment %} {% include "partials/qualification.html" %} {% endcomment %}
+    {% comment %} {% include 'partials/qualification.html' %} {% endcomment %}
     <!-- Qualification End -->
 
-
     <!-- Skill Start -->
-    {% comment %} {% include "partials/skill.html" %} {% endcomment %}
+    {% comment %} {% include 'partials/skill.html' %} {% endcomment %}
     <!-- Skill End -->
-
 
     <!-- Services Start -->
     {% comment %} {% include 'partials/services.html' %} {% endcomment %}
     <!-- Services End -->
 
-
     <!-- Portfolio Start -->
-    {% include "partials/portfolio.html" %}
+    {% include 'partials/portfolio.html' %}
     <!-- Portfolio End -->
 
-
     <!-- Testimonial Start -->
-    {% comment %} {% include 'partials/testimonial.html' %}  {% endcomment %}
+    {% comment %} {% include 'partials/testimonial.html' %} {% endcomment %}
     <!-- Testimonial End -->
 
-
     <!-- Blog Start -->
-    {% include "partials/blog.html" %}
+    {% include 'partials/blog.html' %}
     <!-- Blog End -->
-
 
     <!-- Contact Start -->
     {% include 'partials/contact.html' %}
     <!-- Contact End -->
-
 
     <!-- Footer Start -->
     {% include 'partials/footer.html' %}
@@ -93,7 +80,6 @@
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -111,6 +97,20 @@
 
     <!-- Template Javascript -->
     <script src="{% static 'assets/js/main.js' %}"></script>
-</body>
-
+    <!-- Start of Tawk.to Script -->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date()
+      ;(function () {
+        var s1 = document.createElement('script'),
+          s0 = document.getElementsByTagName('script')[0]
+        s1.async = true
+        s1.src = 'https://embed.tawk.to/673af9012480f5b4f59fc7de/1icv5pbsf'
+        s1.charset = 'UTF-8'
+        s1.setAttribute('crossorigin', '*')
+        s0.parentNode.insertBefore(s1, s0)
+      })()
+    </script>
+    <!-- End of Tawk.to Script -->
+  </body>
 </html>
