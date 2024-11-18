@@ -102,7 +102,7 @@ class Blog(models.Model):
         )
     author = models.ForeignKey(User, on_delete=models.CASCADE ,default='Kyaw Soe Hla')
     content = QuillField()
-    short_content = QuillField(null=True,blank=True)
+    # short_content = QuillField(null=True,blank=True)
     image = models.ImageField(upload_to = 'static/%Y/%m/%d/blogimages', blank= True,null=True,default='static/assets/img/hero-bg.jpg')
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
